@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="pp">
+            <div class="first">
+                <div id="logo"></div>
+                <div id="name" class="cs">
+                    The Weather Report
+                </div>
+            </div>
+            <div class="second">
+                <div id="search">
+                    <input type="text" id="city" placeholder="Enter the City name" id="text">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="cityname"></h1>
+        <span id="span">Date: <span id="at"></span></span>
+        <span id="span">Time:- <span id="im"></span></span>
+        <span id="span">
+            <div class="img"> Weather Condition</div> <span id="conditions"></span>
+        </span>
+        <span id="span">
+            <div class="img">
+                <div class="imgtemp"></div>Temperature
+            </div> <span id="temp"></span>°F
+        </span>
+        <span id="span">
+            <div class="img">
+                <div class="imghumidity"></div>Humidity
+            </div> <span id="humidity"></span> %
+        </span>
+        <span id="span">
+            <div class="img">
+                <div class="imgwspd"></div>Wind Speed
+            </div> <span id="wspd"></span> mph
+        </span>
+        <span id="span">
+            <div class="img">
+                <div class="imgwdir"></div>Wind Direction
+            </div> <span id="wdir"></span>°
+        </span>
+        <span id="span">
+            <div class="img">
+                <div class="imgvisibility"></div>Visibility
+            </div> <span id="visibility"></span> Miles
+        </span>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <span>Date: <span id="date1"></span></span>
+            <span>Weather Condition: <span id="conditions1"></span></span>
+            <span>Temperature: <span id="temp1"></span>°F</span>
+            <span>Humidity: <span id="humidity1"></span> %</span>
+            <span>Wind Speed: <span id="wspd1"></span> mph</span>
+            <span>Wind Direction: <span id="wdir1"></span> °</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date2"></span></span>
+            <span>Weather Condition: <span id="conditions2"></span></span>
+            <span>Temperature: <span id="temp2"></span>°F</span>
+            <span>Humidity: <span id="humidity2"></span> %</span>
+            <span>Wind Speed: <span id="wspd2"></span> mph</span>
+            <span>Wind Direction: <span id="wdir2"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date3"></span></span>
+            <span>Weather Condition: <span id="conditions3"></span></span>
+            <span>Temperature: <span id="temp3"></span>°F</span>
+            <span>Humidity: <span id="humidity3"></span> %</span>
+            <span>Wind Speed: <span id="wspd3"></span> mph</span>
+            <span>Wind Direction: <span id="wdir3"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date4"></span></span>
+            <span>Weather Condition: <span id="conditions4"></span></span>
+            <span>Temperature: <span id="temp4"></span>°F</span>
+            <span>Humidity: <span id="humidity4"></span> %</span>
+            <span>Wind Speed: <span id="wspd4"></span> mph</span>
+            <span>Wind Direction: <span id="wdir4"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date5"></span></span>
+            <span>Weather Condition: <span id="conditions5"></span></span>
+            <span>Temperature: <span id="temp5"></span>°F</span>
+            <span>Humidity: <span id="humidity5"></span> %</span>
+            <span>Wind Speed: <span id="wspd5"></span> mph</span>
+            <span>Wind Direction: <span id="wdir5"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date6"></span></span>
+            <span>Weather Condition: <span id="conditions6"></span></span>
+            <span>Temperature: <span id="temp6"></span>°F</span>
+            <span>Humidity: <span id="humidity6"></span> %</span>
+            <span>Wind Speed: <span id="wspd6"></span> mph</span>
+            <span>Wind Direction: <span id="wdir6"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date7"></span></span>
+            <span>Weather Condition: <span id="conditions7"></span></span>
+            <span>Temperature: <span id="temp7"></span>°F</span>
+            <span>Humidity: <span id="humidity7"></span> %</span>
+            <span>Wind Speed: <span id="wspd7"></span> mph</span>
+            <span>Wind Direction: <span id="wdir7"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date8"></span></span>
+            <span>Weather Condition: <span id="conditions8"></span></span>
+            <span>Temperature: <span id="temp8"></span>°F</span>
+            <span>Humidity: <span id="humidity8"></span> %</span>
+            <span>Wind Speed: <span id="wspd8"></span> mph</span>
+            <span>Wind Direction: <span id="wdir8"></span>°</span>
+        </div>
+        <div class="card">
+            <span>Date: <span id="date9"></span></span>
+            <span>Weather Condition: <span id="conditions9"></span></span>
+            <span>Temperature: <span id="temp9"></span>°F</span>
+            <span>Humidity: <span id="humidity9"></span> %</span>
+            <span>Wind Speed: <span id="wspd9"></span> mph</span>
+            <span>Wind Direction: <span id="wdir9"></span>°</span>
+        </div>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Weather Condition</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Wind Speed</th>
+                <th>Wind Direction</th>
+                <th>Visibility</th>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date10"></span>
+                </td>
+                <td>
+                    <span id="conditions10"></span>
+                </td>
+                <td>
+                    <span id="temp10"></span>°F
+                </td>
+                <td>
+                    <span id="humidity10"></span> %
+                </td>
+                <td>
+                    <span id="wspd10"></span> mph
+                </td>
+                <td>
+                    <span id="wdir10"></span>°
+                </td>
+                <td>
+                    <span id="visibility10"></span> Miles
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date11"></span>
+                </td>
+                <td>
+                    <span id="conditions11"></span>
+                </td>
+                <td>
+                    <span id="temp11"></span>°F
+                </td>
+                <td>
+                    <span id="humidity11"></span> %
+                </td>
+                <td>
+                    <span id="wspd11"></span> mph
+                </td>
+                <td>
+                    <span id="wdir11"></span>°
+                </td>
+                <td>
+                    <span id="visibility11"></span> Miles
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date12"></span>
+                </td>
+                <td>
+                    <span id="conditions12"></span>
+                </td>
+                <td>
+                    <span id="temp12"></span>°F
+                </td>
+                <td>
+                    <span id="humidity12"></span> %
+                </td>
+                <td>
+                    <span id="wspd12"></span> mph
+                </td>
+                <td>
+                    <span id="wdir12"></span>°
+                </td>
+                <td>
+                    <span id="visibility12"></span> Miles
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date13"></span>
+                </td>
+                <td>
+                    <span id="conditions13"></span>
+                </td>
+                <td>
+                    <span id="temp13"></span>°F
+                </td>
+                <td>
+                    <span id="humidity13"></span> %
+                </td>
+                <td>
+                    <span id="wspd13"></span> mph
+                </td>
+                <td>
+                    <span id="wdir13"></span>°
+                </td>
+                <td>
+                    <span id="visibility13"></span> Miles
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date14"></span>
+                </td>
+                <td>
+                    <span id="conditions14"></span>
+                </td>
+                <td>
+                    <span id="temp14"></span>°F
+                </td>
+                <td>
+                    <span id="humidity14"></span> %
+                </td>
+                <td>
+                    <span id="wspd14"></span> mph
+                </td>
+                <td>
+                    <span id="wdir14"></span>°
+                </td>
+                <td>
+                    <span id="visibility14"></span> Miles
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="date15"></span>
+                </td>
+                <td>
+                    <span id="conditions15"></span>
+                </td>
+                <td>
+                    <span id="temp15"></span>°F
+                </td>
+                <td>
+                    <span id="humidity15"></span> %
+                </td>
+                <td>
+                    <span id="wspd15"></span> mph
+                </td>
+                <td>
+                    <span id="wdir15"></span>°
+                </td>
+                <td>
+                    <span id="visibility15"></span> Miles
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        Designed and Developed by NAGAMALLY SRUJAN
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

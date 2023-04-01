@@ -1,0 +1,265 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-image: url('img/weatherBG.webp');
+    background-size: cover;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin: 5px;
+}
+
+.pp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 35px;
+}
+
+header {
+    background-color: azure;
+}
+
+#logo {
+    background-image: url('img/logo.png');
+    background-image: url('img/logo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 40%;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search input {
+    margin: 10px;
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#submit {
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 3px;
+    margin: 10px;
+    background: none;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+#submit:hover {
+    background-color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80vh;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+#span {
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: rgba(173, 154, 154, 0.5);
+    width: 20vh;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(157, 201, 158, 0.5);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.card span {
+    margin: 2px;
+}
+
+.imgtemp {
+    height: 50px;
+    width: 50px;
+    background-image: url('img/Temperature.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.imgwspd {
+    height: 50px;
+    width: 50px;
+    background-image: url('img/windspeed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.imgwdir {
+    height: 50px;
+    width: 50px;
+    background-image: url('img/WindDirection.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.imgvisibility {
+    height: 50px;
+    width: 50px;
+    background-image: url('img/visibility.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.imghumidity {
+    height: 50px;
+    width: 50px;
+    background-image: url('img/humidity.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgba(215, 228, 215, 0.5);
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid;
+}
+
+td {
+    padding: 3px;
+}
+
+th {
+    padding: 3px 13px;
+}
+
+footer {
+    text-align: center;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    cursor: pointer;
+    display: none;
+    height: 43px;
+}
+
+.line {
+    height: 3px;
+    width: 33px;
+    background-color: black;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:650px) {
+    table {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .second {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #search {
+        flex-direction: column;
+    }
+
+    .container {
+        width: auto;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .cs {
+        display: none;
+        text-align: center;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.resp {
+    display: flex;
+    flex-direction: column;
+}
